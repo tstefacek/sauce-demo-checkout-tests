@@ -1,5 +1,3 @@
-
-import io.qameta.allure.*;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -190,6 +188,11 @@ public class CheckoutFlowTest {
 
         Assert.assertEquals(orderCompletedPage.getCompleteHeader(), "Thank you for your order!");
         Assert.assertEquals(orderCompletedPage.getCompleteText(), "Your order has been dispatched, and will arrive just as fast as the pony can get there!");
+    }
+
+    @Test
+    public void testDummy(){
+        Assert.assertTrue(true);
     }
 
     @AfterClass
